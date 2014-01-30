@@ -13,6 +13,7 @@ Put the following into `feature.jspc` file:
     describe 'feature X' {
 
       it 'should work' {
+
         function no() { throw new Error('x'); }
         function yes() { }
 
