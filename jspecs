@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+var path = require('path');
+var spawn = require('child_process').spawn;
+
+var jspec = require.resolve('./index');
+var mocha = path.join(
+  path.dirname(require.resolve('mocha')),
+  'bin', 'mocha');
+
+var args = process.argv.slice(1);
+var cmd = process.argv[0];
+args.splice(0, 1, mocha, '--compilers', 'jspc:' + jspec);
+
+var p = spawn(cmd, args);
+p.stdout.pipe(process.stdout);
+p.stderr.pipe(process.stderr);

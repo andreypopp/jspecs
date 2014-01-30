@@ -1,0 +1,5 @@
+describe "jspecs" {
+  it "should work" {
+    2 + 2 should == 4
+  }
+}
