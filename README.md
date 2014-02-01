@@ -43,3 +43,6 @@ Put the following into `feature.jspc` file:
 then use `jspecs` executable to run tests:
 
     % jspecs ./feature.jspc
+
+Otherwise `jspecs` is a thin wrapper on top of `mocha` executable which
+preprocesses specs sources before running them with Mocha.
