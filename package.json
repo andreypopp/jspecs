@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "./jspecs",
   "dependencies": {
-    "sweet-assertions": "~0.1.1",
+    "sweet-assertions": "~0.2.1",
     "sweet-bdd": "~1.0.0",
     "sweet.js": "~0.4.1",
     "mocha": "~1.17.1"
